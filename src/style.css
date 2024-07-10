@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.component {
+  background-color: hsl(0, 0%, 100%);
+  width: 750px;
+  border-radius: 25px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+  box-shadow: 10px 10px 50px hsl(221, 100%, 96%);
+}
+@media screen and (max-width: 800px) {
+  .component {
+    grid-template-columns: 1fr;
+    width: 100%;
+    box-shadow: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+.component .result {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 25px;
+  padding: 60px;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .component .result {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 20px 40px 40px;
+    font-size: 1rem;
+  }
+}
+.component .result h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 800px) {
+  .component .result h1 {
+    font-size: 1.2rem;
+  }
+}
+.component .result .score {
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  width: 200px;
+  aspect-ratio: 1;
+  margin: auto;
+  border-radius: 50%;
+  line-height: 1;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 800px) {
+  .component .result .score {
+    width: 150px;
+    line-height: 1.2;
+    padding-top: 30px;
+  }
+}
+.component .result .score .score-top {
+  color: hsl(0, 0%, 100%);
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+@media screen and (max-width: 800px) {
+  .component .result .score .score-top {
+    font-size: 3.5rem;
+  }
+}
+.component .result h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 800px) {
+  .component .result h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+}
+.component .summary {
+  padding: 40px;
+}
+@media screen and (max-width: 800px) {
+  .component .summary {
+    padding: 10px 30px;
+  }
+}
+.component .summary h2 {
+  color: hsl(224, 30%, 27%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 20px 0 25px;
+}
+@media screen and (max-width: 800px) {
+  .component .summary h2 {
+    font-size: 1.1rem;
+  }
+}
+.component .summary .item {
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 800px) {
+  .component .summary .item {
+    font-size: 1rem;
+  }
+}
+.component .summary .item.reaction {
+  background-color: #fff0f0;
+  color: hsl(0, 100%, 67%);
+}
+.component .summary .item.memory {
+  background-color: #fff8eb;
+  color: hsl(39, 100%, 56%);
+}
+.component .summary .item.verbal {
+  background-color: #d6fff5;
+  color: hsl(166, 100%, 37%);
+}
+.component .summary .item.visual {
+  background-color: #e7eafd;
+  color: hsl(234, 85%, 45%);
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 800px) {
+  .component .summary .item.visual {
+    margin-bottom: 20px;
+  }
+}
+.component .summary .item .item-text {
+  display: flex;
+  gap: 10px;
+}
+.component .summary .item .item-score {
+  color: #929fc4;
+  font-weight: 700;
+}
+.component .summary .item .item-score span {
+  color: hsl(224, 30%, 27%);
+}
+.component .summary button {
+  display: block;
+  width: 100%;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  border: none;
+  padding: 15px 0;
+  border-radius: 100px;
+}
+@media screen and (max-width: 800px) {
+  .component .summary button {
+    margin-bottom: 20px;
+  }
+}
+.component .summary button:hover {
+  cursor: pointer;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/*# sourceMappingURL=style.css.map */
